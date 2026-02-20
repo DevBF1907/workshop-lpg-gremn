@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
+
 
 const navLinks = [
   { to: "/", label: "Início" },
@@ -41,7 +41,6 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <ThemeToggle />
             <Link to="/inscricao" className="btn-gold text-sm px-5 py-2">
               Inscreva-se
             </Link>
@@ -74,16 +73,13 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
-            <div className="flex items-center gap-3 mt-2">
-              <ThemeToggle />
-              <Link
-                to="/inscricao"
-                onClick={() => setIsOpen(false)}
-                className="btn-gold text-sm px-5 py-2 flex-1 text-center"
-              >
-                Inscreva-se
-              </Link>
-            </div>
+            <Link
+              to="/inscricao"
+              onClick={() => setIsOpen(false)}
+              className="btn-gold text-sm px-5 py-2 mt-2 w-full text-center"
+            >
+              Inscreva-se
+            </Link>
           </div>
         )}
       </div>
