@@ -48,15 +48,15 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-primary-foreground/70">
                 <Mail size={16} className="text-accent shrink-0" />
-                contato@cgemp.edu.br
+                gre.metronorte@adm.educacao.pe.gov.br
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/70">
                 <Phone size={16} className="text-accent shrink-0" />
-                (92) 3456-7890
+                (81) 3182-2590
               </li>
               <li className="flex items-start gap-2 text-primary-foreground/70">
                 <MapPin size={16} className="text-accent shrink-0 mt-0.5" />
-                Av. Educação, 1000 — Manaus, AM
+               Rua Acadêmico Hélio Ramos, 500, no bairro Cidade Universitária, Recife - PE
               </li>
             </ul>
           </div>

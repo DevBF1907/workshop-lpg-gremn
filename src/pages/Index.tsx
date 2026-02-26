@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { BookOpen, Brain, GraduationCap, Lightbulb, Rocket, Target } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/fundoHero.png";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
 
 const objectives = [
@@ -41,7 +41,7 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             <span className="text-primary-foreground/60 text-sm font-body">📅 15 a 20 de Março de 2026</span>
             <span className="hidden sm:inline text-primary-foreground/30">•</span>
-            <span className="text-primary-foreground/60 text-sm font-body">📍 Manaus, AM</span>
+            <span className="text-primary-foreground/60 text-sm font-body"> Olinda, PE</span>
           </div>
           <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
             <Link to="/inscricao" className="btn-gold text-lg px-10 py-4">
