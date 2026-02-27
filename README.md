@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# Workshop Formativo CGEMP 🎓
 
-## Project info
+O **Workshop Formativo CGEMP** é uma plataforma moderna desenvolvida para a **Coordenação Geral de Ensino Médio e Profissional (CGEMP)**. O objetivo principal é facilitar a divulgação, consulta e inscrição em workshops de formação continuada voltados para educadores, gestores e profissionais da educação.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+A plataforma busca promover a excelência na educação pública através da inovação pedagógica e do desenvolvimento profissional docente.
 
-## How can I edit this code?
+## ✨ Funcionalidades
 
-There are several ways of editing your application.
+- **Catálogo de Workshops:** Listagem detalhada de oficinas em diversas áreas (Língua Portuguesa, Biologia, IA, Robótica, etc.).
+- **Sistema de Inscrição:** Formulário intuitivo para garantir a participação nos eventos.
+- **Páginas Institucionais:** Informações sobre a missão, visão e valores da CGEMP.
+- **Interface Responsiva:** Otimizada para dispositivos móveis e desktops.
+- **Animações Fluídas:** Experiência de usuário aprimorada com animações de scroll e transições.
+- **Design Moderno:** Utilização de componentes acessíveis e esteticamente polidos.
 
-**Use Lovable**
+## 🚀 Tecnologias Utilizadas
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Este projeto foi construído com as melhores ferramentas de desenvolvimento web moderno:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **[React](https://reactjs.org/):** Biblioteca principal para a interface.
+- **[TypeScript](https://www.typescriptlang.org/):** Tipagem estática para maior segurança e produtividade.
+- **[Vite](https://vitejs.dev/):** Build tool ultra-rápida.
+- **[Tailwind CSS](https://tailwindcss.com/):** Framework CSS utilitário para estilização.
+- **[Shadcn UI](https://ui.shadcn.com/):** Coleção de componentes reutilizáveis e acessíveis.
+- **[Lucide React](https://lucide.dev/):** Biblioteca de ícones.
+- **[React Router](https://reactrouter.com/):** Gerenciamento de rotas SPA.
+- **[TanStack Query](https://tanstack.com/query/latest):** Gerenciamento de estado e requisições (preparado para escalabilidade).
 
-**Use your preferred IDE**
+## 📁 Estrutura do Projeto
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```text
+src/
+├── assets/          # Imagens e recursos estáticos
+├── components/      # Componentes compartilhados e UI (Shadcn)
+├── data/            # Mock de dados (Workshops, etc.)
+├── hooks/           # Hooks customizados (Toast, mobile, etc.)
+├── lib/             # Utilitários (cn, etc.)
+├── pages/           # Páginas principais da aplicação
+└── test/            # Configurações de testes com Vitest
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Como Executar o Projeto Localmente
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Pré-requisitos
+- Node.js instalado (v18+)
+- Gerenciador de pacotes (npm, yarn ou bun)
 
-**Use GitHub Codespaces**
+### Passo a Passo
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clonar o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/workshop-gateway.git
+   cd workshop-gateway
+   ```
 
-## What technologies are used for this project?
+2. **Instalar dependências:**
+   ```bash
+   npm install
+   # ou
+   bun install
+   ```
 
-This project is built with:
+3. **Executar o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   # ou
+   bun dev
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. **Acessar no navegador:**
+   Abra `http://localhost:5173`
 
-## How can I deploy this project?
+## 🧪 Testes
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+O projeto utiliza **Vitest** para garantir a qualidade do código.
+```bash
+npm run test
+```
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Desenvolvido com ❤️ para transformar a educação.
