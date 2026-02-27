@@ -28,14 +28,15 @@ export const workshops: Workshop[] = [
     id: "biologia",
     name: "Biologia",
     icon: "Leaf",
-    description: "Estratégias práticas para o ensino de Biologia com foco em experimentação, uso de tecnologias digitais e abordagens interdisciplinares para engajar os alunos.",
-    professor: "Prof. Dr. João Santos",
+    description: "A oficina propõe analisar e combater informações falsas que circulam nas redes sociais e na mídia sobre substâncias químicas presentes em alimentos, medicamentos e produtos do cotidiano. Ao desmistificar essas informações, a oficina promove a alfabetização científica e contribui para decisões mais conscientes sobre alimentação e saúde, fortalecendo o papel da ciência como ferramenta essencial para o bem-estar social.",
+    professor: "Prof. Luiz Alberto Barros",
     horario: "08:00 - 12:00",
-    data: "15 de Março de 2026",
+    data: "16 de Março de 2026",
     publicoAlvo: "Professores de Biologia e Ciências Naturais",
     cargaHoraria: "4 horas",
     vagas: 25,
   },
+
   {
     id: "fisica",
     name: "Física",

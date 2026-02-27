@@ -92,7 +92,7 @@ const WorkshopDetail = () => {
                 />
               </div>
               <p className="text-muted-foreground text-sm">
-                📍 Av. Educação, 1000 — Manaus, AM
+                📍 Olinda, PE
               </p>
             </div>
 

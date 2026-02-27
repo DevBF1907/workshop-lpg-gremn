@@ -7,6 +7,8 @@ import {
   Library, Cpu,
 } from "lucide-react";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
+import logosobre from "@/assets/fundoSobre.png";
+
 
 const iconMap: Record<string, LucideIcon> = {
   BookOpen, Leaf, Atom, FlaskConical, BrainCircuit, Calculator,
@@ -22,17 +24,22 @@ function AnimatedSection({ children, className = "" }: { children: React.ReactNo
 const Inscricao = () => {
   return (
     <div className="pt-20">
-      {/* Header */}
-      <section className="section-padding bg-secondary">
-        <div className="section-container text-center">
-          <h1 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-4">
-            Workshops Disponíveis
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Escolha o workshop que mais se encaixa no seu perfil e faça sua inscrição.
-          </p>
-        </div>
-      </section>
+     <section
+  className="relative section-padding bg-cover bg-center"
+  style={{ backgroundImage: `url(${logosobre})` }}
+>
+
+
+  {/* Conteúdo */}
+  <div className="relative z-10 section-container text-center">
+    <h1 className="font-heading font-bold text-3xl md:text-5xl text-foregroundforeground mb-4">
+      Workshops Disponíveis
+    </h1>
+    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+      Escolha o workshop que mais se encaixa no seu perfil e faça sua inscrição.
+    </p>
+  </div>
+</section>
 
       {/* Workshop cards */}
       <section className="section-padding bg-background">
