@@ -7,6 +7,8 @@ import {
   Library, Cpu,
 } from "lucide-react";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
+import logosobre from "@/assets/fundoSobre.png";
+
 
 const iconMap: Record<string, LucideIcon> = {
   BookOpen, Leaf, Atom, FlaskConical, BrainCircuit, Calculator,
@@ -22,17 +24,22 @@ function AnimatedSection({ children, className = "" }: { children: React.ReactNo
 const Inscricao = () => {
   return (
     <div className="pt-20">
-      {/* Header */}
-      <section className="section-padding bg-secondary">
-        <div className="section-container text-center">
-          <h1 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-4">
-            Workshops Disponíveis
-          </h1>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Escolha o workshop que mais se encaixa no seu perfil e faça sua inscrição.
-          </p>
-        </div>
-      </section>
+     <section
+  className="relative section-padding bg-cover bg-center"
+  style={{ backgroundImage: `url(${logosobre})` }}
+>
+
+
+  {/* Conteúdo */}
+  <div className="relative z-10 section-container text-center">
+    <h1 className="font-heading font-bold text-3xl md:text-5xl text-foregroundforeground mb-4">
+      Workshops Disponíveis
+    </h1>
+    <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+      Escolha o workshop que mais se encaixa no seu perfil e faça sua inscrição.
+    </p>
+  </div>
+</section>
 
       {/* Workshop cards */}
       <section className="section-padding bg-background">
@@ -50,10 +57,9 @@ const Inscricao = () => {
                       {ws.name}
                     </h3>
                     <p className="text-muted-foreground text-sm line-clamp-2">{ws.description}</p>
-                    <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground">
-                      <span>📅 {ws.data}</span>
-                      <span>•</span>
-                      <span>🕐 {ws.horario}</span>
+                    <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground">
+                      <span className="flex items-center gap-1">📅 {ws.data}</span>
+                      <span className="flex items-center gap-1">🕐 {ws.sessions.map(s => s.shift).join(" e ")}</span>
                     </div>
                   </Link>
                 </AnimatedSection>

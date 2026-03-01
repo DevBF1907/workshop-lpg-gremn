@@ -1,5 +1,7 @@
 import { Target, Eye, Heart, Star } from "lucide-react";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
+import logosobre from "@/assets/fundoSobre.png";
+
 
 function AnimatedSection({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   const ref = useScrollAnimation();
@@ -28,16 +30,22 @@ const Sobre = () => {
   return (
     <div className="pt-20">
       {/* Header */}
-      <section className="relative py-16 md:py-24" style={{ background: "var(--hero-gradient)" }}>
-        <div className="section-container text-center">
-          <h1 className="font-heading font-bold text-3xl md:text-5xl text-primary-foreground mb-4">
-            Sobre a CGEMP
-          </h1>
-          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
-            Conheça a história, missão e valores da Coordenação Geral de Ensino Médio e Profissional.
-          </p>
-        </div>
-      </section>
+      <section
+  className="relative py-16 md:py-24 min-h-[400px] bg-cover bg-center"
+  style={{ backgroundImage: `url(${logosobre})` }}
+>
+  
+
+  {/* Conteúdo */}
+  <div className="relative z-10 section-container text-center">
+    <h1 className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-4">
+      Sobre a CGEMP
+    </h1>
+    <p className="text-muted-foreground  text-lg max-w-2xl mx-auto">
+      Conheça a história, missão e valores da Coordenação Geral de Ensino Médio e Profissional.
+    </p>
+  </div>
+</section>
 
       {/* História */}
       <section className="section-padding bg-background">

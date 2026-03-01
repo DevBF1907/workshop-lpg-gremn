@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
+import logo from "../assets/logo01.png";
 
 const navLinks = [
   { to: "/", label: "Início" },
@@ -18,12 +18,14 @@ const Navbar = () => {
       <div className="section-container">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link to="/" className="flex items-center gap-2">
-            <span className="font-heading font-bold text-xl md:text-2xl text-primary-foreground">
-              CGEMP
-            </span>
-            <span className="hidden sm:inline text-primary-foreground/60 text-sm font-body">
-              | Workshop Formativo
-            </span>
+            <img 
+              src={logo} 
+              alt="Logo CGEMP" 
+              className="h-8 md:h-10 w-auto"
+            />
+         <span className="hidden sm:inline text-[#D4AF37] text-sm font-body">
+              | 1º Workshop formativo da CGEMP
+          </span>
           </Link>
 
           {/* Desktop nav */}
