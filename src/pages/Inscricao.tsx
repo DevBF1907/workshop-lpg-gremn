@@ -57,10 +57,9 @@ const Inscricao = () => {
                       {ws.name}
                     </h3>
                     <p className="text-muted-foreground text-sm line-clamp-2">{ws.description}</p>
-                    <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground">
-                      <span>📅 {ws.data}</span>
-                      <span>•</span>
-                      <span>🕐 {ws.horario}</span>
+                    <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground">
+                      <span className="flex items-center gap-1">📅 {ws.data}</span>
+                      <span className="flex items-center gap-1">🕐 {ws.sessions.map(s => s.shift).join(" e ")}</span>
                     </div>
                   </Link>
                 </AnimatedSection>
