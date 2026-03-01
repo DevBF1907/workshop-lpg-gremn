@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BookOpen, Brain, GraduationCap, Lightbulb, Rocket, Target } from "lucide-react";
 import heroBg from "@/assets/fundoHero.png";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
-import logo from "@/assets/logo02.png";   
+import logo from "@/assets/logo01.png";   
 
 const objectives = [
   { icon: BookOpen, text: "Promover formação interdisciplinar de qualidade" },
