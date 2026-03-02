@@ -1,6 +1,7 @@
 export interface Session {
   id: string;
   shift: "Manhã" | "Tarde";
+  title?: string;
   professor: string;
   horario: string;
   vagas: number;
@@ -21,6 +22,8 @@ export interface Workshop {
 }
 
 const DEFAULT_MAP = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.01872123!2d-34.84!3d-7.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTQnMDAuMCJTIDM0wrA1MCcwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1";
+const locWorkshopPortugues = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.493922123!2d-34.9111831!3d-7.8525987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab14d50f29c135%3A0xb7c10c823a37123b!2sEscola%20T%C3%A9cnica%20Estadual%20Jurandir%20Bezerra%20Lins!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr";
+const locWorkshopQuimica = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.457813083!2d-34.8581581!3d-8.0132408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab22a5f6297a5f%3A0x780e7d9bc110b70!2sEscola%20Estadual%20Guedes%20Alcoforado!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr";
 
 export const workshops: Workshop[] = [
   {
@@ -28,16 +31,17 @@ export const workshops: Workshop[] = [
     name: "Língua Portuguesa",
     icon: "BookOpen",
     description: "Workshop focado em metodologias inovadoras para o ensino da Língua Portuguesa, explorando novas abordagens para leitura, escrita e interpretação de textos no contexto contemporâneo.",
-    data: "15 de Março de 2026",
+    data: "19 de Março de 2026",
     publicoAlvo: "Professores de Língua Portuguesa do Ensino Fundamental e Médio",
     cargaHoraria: "4 horas",
-    location: "EREM Guedes Alcoforado, Olinda - PE",
-    mapUrl: DEFAULT_MAP,
+    location: "ETE JURANDIR BEZERRA LINS",
+    mapUrl: locWorkshopPortugues,
     sessions: [
       {
         id: "lp-manha",
         shift: "Manhã",
-        professor: "Prof.ª Dra. Maria Silva",
+        title: "A busca por informações confiáveis - avaliação e correção de redações do Enem",
+        professor: "Profs. Diego Lins e Rogério Fonseca",
         horario: "08:00 - 12:00",
         vagas: 30,
         formLink: "https://forms.gle/exemplo-lp-manha",
@@ -45,7 +49,8 @@ export const workshops: Workshop[] = [
       {
         id: "lp-tarde",
         shift: "Tarde",
-        professor: "Prof. Dr. João Santos",
+        title: "Discurso e Persuasão: um olhar crítico sobre os conteúdos informativos compartilhados na internet",
+        professor: "Prof. Henrique Conceição",
         horario: "13:00 - 17:00",
         vagas: 30,
         formLink: "https://forms.gle/exemplo-lp-tarde",
@@ -66,6 +71,7 @@ export const workshops: Workshop[] = [
       {
         id: "bio-manha",
         shift: "Manhã",
+        title: "Biologia Celular e Molecular na Escola",
         professor: "Prof. Luiz Alberto Barros",
         horario: "08:00 - 12:00",
         vagas: 25,
@@ -74,6 +80,7 @@ export const workshops: Workshop[] = [
       {
         id: "bio-tarde",
         shift: "Tarde",
+        title: "Educação Ambiental e Sustentabilidade",
         professor: "Prof.ª Dra. Helena Costa",
         horario: "13:00 - 17:00",
         vagas: 25,
@@ -95,6 +102,7 @@ export const workshops: Workshop[] = [
       {
         id: "fis-manha",
         shift: "Manhã",
+        title: "Simulações Computacionais no Ensino de Física",
         professor: "Prof. Dr. Carlos Oliveira",
         horario: "08:00 - 12:00",
         vagas: 25,
@@ -103,6 +111,7 @@ export const workshops: Workshop[] = [
       {
         id: "fis-tarde",
         shift: "Tarde",
+        title: "Laboratórios Virtuais e Experimentos Práticos",
         professor: "Prof. Dr. Carlos Oliveira",
         horario: "13:00 - 17:00",
         vagas: 25,
@@ -115,15 +124,16 @@ export const workshops: Workshop[] = [
     name: "Química",
     icon: "FlaskConical",
     description: "Abordagens inovadoras no ensino de Química com ênfase na contextualização do conteúdo e práticas experimentais seguras e acessíveis.",
-    data: "16de Março de 2026",
+    data: "16 de Março de 2026",
     publicoAlvo: "Professores de Química do Ensino Médio",
     cargaHoraria: "4 horas",
-    location: "EREM Guedes Alcoforado, Olinda - PE",
-    mapUrl: DEFAULT_MAP,
+    location: "EREM Guedes Alcoforado",
+    mapUrl: locWorkshopQuimica,
     sessions: [
       {
         id: "qui-tarde",
         shift: "Tarde",
+        title: "Entre Mitos e Moléculas: A verdade científica por trás das Fake News na Saúde e Alimentação",
         professor: "Prof. Luiz Alberto Barros",
         horario: "13:00 - 17:00",
         vagas: 25,
@@ -132,7 +142,8 @@ export const workshops: Workshop[] = [
       {
         id: "qui-tarde",
         shift: "Tarde",
-        professor: "Prof.ª Mário",
+        title: "Robótica, Conectividade e Cidadania Digital: Construindo Tecnologia com Consciência",
+        professor: "Prof. Mário",
         horario: "13:00 - 17:00",
         vagas: 25,
         formLink: "https://forms.gle/exemplo-qui-tarde",
@@ -153,6 +164,7 @@ export const workshops: Workshop[] = [
       {
         id: "ia-manha",
         shift: "Manhã",
+        title: "Ferramentas de IA para Personalização do Ensino",
         professor: "Prof. Dr. Ricardo Lima",
         horario: "08:00 - 12:00",
         vagas: 40,
@@ -161,6 +173,7 @@ export const workshops: Workshop[] = [
       {
         id: "ia-tarde",
         shift: "Tarde",
+        title: "IA Generativa no Apoio Pedagógico",
         professor: "Prof. Dr. Ricardo Lima",
         horario: "13:00 - 17:00",
         vagas: 40,
@@ -182,6 +195,7 @@ export const workshops: Workshop[] = [
       {
         id: "mat-manha",
         shift: "Manhã",
+        title: "Resolução de Problemas e Gamificação",
         professor: "Prof. Omar",
         horario: "08:00 - 12:00",
         vagas: 30,
@@ -190,6 +204,7 @@ export const workshops: Workshop[] = [
       {
         id: "mat-tarde",
         shift: "Tarde",
+        title: "Tecnologias Digitais no Ensino de Matemática",
         professor: "Prof. Huanê Patricia",
         horario: "13:00 - 17:00",
         vagas: 30,
@@ -211,6 +226,7 @@ export const workshops: Workshop[] = [
       {
         id: "filo-manha",
         shift: "Manhã",
+        title: "Pensamento Crítico e Debate em Sala de Aula",
         professor: "Prof. Dr. Pedro Mendes",
         horario: "08:00 - 12:00",
         vagas: 25,
@@ -219,6 +235,7 @@ export const workshops: Workshop[] = [
       {
         id: "filo-tarde",
         shift: "Tarde",
+        title: "Filosofia Contemporânea e Novas Linguagens",
         professor: "Prof. Dr. Pedro Mendes",
         horario: "13:00 - 17:00",
         vagas: 25,
@@ -240,6 +257,7 @@ export const workshops: Workshop[] = [
       {
         id: "geo-manha",
         shift: "Manhã",
+        title: "Geotecnologias e Sensoriamento Remoto",
         professor: "Prof.Ivison Marques ",
         horario: "08:00 - 12:00",
         vagas: 25,
@@ -248,6 +266,7 @@ export const workshops: Workshop[] = [
       {
         id: "geo-tarde",
         shift: "Tarde",
+        title: "Práticas de Campo e Aprendizagem Significativa",
         professor: "Prof.Ivison Marques",
         horario: "13:00 - 17:00",
         vagas: 25,
@@ -269,6 +288,7 @@ export const workshops: Workshop[] = [
       {
         id: "his-manha",
         shift: "Manhã",
+        title: "Fontes Primárias Digitais e Narrativas Históricas",
         professor: "Prof.Rafaela Franklin",
         horario: "08:00 - 12:00",
         vagas: 30,
@@ -277,6 +297,7 @@ export const workshops: Workshop[] = [
       {
         id: "his-tarde",
         shift: "Tarde",
+        title: "Projetos Interdisciplinares no Ensino de História",
         professor: "Prof.Rafaela Franklin",
         horario: "13:00 - 17:00",
         vagas: 30,
@@ -298,6 +319,7 @@ export const workshops: Workshop[] = [
       {
         id: "soc-manha",
         shift: "Manhã",
+        title: "Análise Crítica da Sociedade Contemporânea",
         professor: "Prof.ª Dra. Carla Rodrigues",
         horario: "08:00 - 12:00",
         vagas: 25,
@@ -306,6 +328,7 @@ export const workshops: Workshop[] = [
       {
         id: "soc-tarde",
         shift: "Tarde",
+        title: "Metodologias Participativas e Engajamento",
         professor: "Prof.ª Dra. Carla Rodrigues",
         horario: "13:00 - 17:00",
         vagas: 25,
@@ -327,6 +350,7 @@ export const workshops: Workshop[] = [
       {
         id: "le-manha",
         shift: "Manhã",
+        title: "Comunicação e Imersão no Ensino de Inglês",
         professor: "Prof.ª Dra. Isabela Martins",
         horario: "08:00 - 12:00",
         vagas: 30,
@@ -335,6 +359,7 @@ export const workshops: Workshop[] = [
       {
         id: "le-tarde",
         shift: "Tarde",
+        title: "Recursos Multimídia e Gamificação no Idioma",
         professor: "Prof.ª Dra. Isabela Martins",
         horario: "13:00 - 17:00",
         vagas: 30,
@@ -356,6 +381,7 @@ export const workshops: Workshop[] = [
       {
         id: "ef-manha",
         shift: "Manhã",
+        title: "Esportes Adaptados e Inclusão Escolar",
         professor: "Prof. Dr. André Barbosa",
         horario: "08:00 - 12:00",
         vagas: 25,
@@ -364,6 +390,7 @@ export const workshops: Workshop[] = [
       {
         id: "ef-tarde",
         shift: "Tarde",
+        title: "Jogos Cooperativos e Saúde Integral",
         professor: "Prof. Dr. André Barbosa",
         horario: "13:00 - 17:00",
         vagas: 25,
@@ -375,7 +402,7 @@ export const workshops: Workshop[] = [
     id: "arte",
     name: "Arte",
     icon: "Palette",
-    description: "O ensino de Arte como ferramenta de transformation social, explorando linguagens artísticas contemporâneas e expressão criativa.",
+    description: "O ensino de Arte como ferramenta de transformation social, explorando linguagens artísticas contemporâneas e expression criativa.",
     data: "19 de Março de 2026",
     publicoAlvo: "Professores de Arte e Educação Artística",
     cargaHoraria: "4 horas",
@@ -385,7 +412,8 @@ export const workshops: Workshop[] = [
       {
         id: "arte-manha",
         shift: "Manhã",
-        professor: "Prof.Ayla",
+        title: "Transformação Social através da Arte",
+        professor: "Prof. Ayla",
         horario: "08:00 - 12:00",
         vagas: 25,
         formLink: "https://forms.gle/exemplo-arte-manha",
@@ -393,7 +421,8 @@ export const workshops: Workshop[] = [
       {
         id: "arte-tarde",
         shift: "Tarde",
-        professor: "Prof.Ayla",
+        title: "Linguagens Contemporâneas e Criatividade",
+        professor: "Prof. Ayla",
         horario: "13:00 - 17:00",
         vagas: 25,
         formLink: "https://forms.gle/exemplo-arte-tarde",
@@ -414,6 +443,7 @@ export const workshops: Workshop[] = [
       {
         id: "bib-manha",
         shift: "Manhã",
+        title: "Mediação de Leitura e Curadoria Digital",
         professor: "Prof.ª Dra. Renata Nunes",
         horario: "08:00 - 12:00",
         vagas: 20,
@@ -422,6 +452,7 @@ export const workshops: Workshop[] = [
       {
         id: "bib-tarde",
         shift: "Tarde",
+        title: "Biblioteca como Espaço de Pesquisa e Inovação",
         professor: "Prof.ª Dra. Renata Nunes",
         horario: "13:00 - 17:00",
         vagas: 20,
@@ -443,6 +474,7 @@ export const workshops: Workshop[] = [
       {
         id: "rob-manha",
         shift: "Manhã",
+        title: "Robótica Educacional e Projetos STEAM",
         professor: "Prof. Dr. Felipe Gomes",
         horario: "08:00 - 12:00",
         vagas: 20,
@@ -451,6 +483,7 @@ export const workshops: Workshop[] = [
       {
         id: "rob-tarde",
         shift: "Tarde",
+        title: "Programação em Blocos e Automação Simples",
         professor: "Prof. Dr. Felipe Gomes",
         horario: "13:00 - 17:00",
         vagas: 20,
