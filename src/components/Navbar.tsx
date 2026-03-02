@@ -16,16 +16,21 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-primary-foreground/10">
       <div className="section-container">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <Link to="/" className="flex items-center gap-2">
+        <div className="flex items-center justify-between h-20 md:h-24">
+          <Link to="/" className="flex items-center gap-3">
             <img 
               src={logo} 
               alt="Logo CGEMP" 
-              className="h-8 md:h-10 w-auto"
+              className="h-10 md:h-14 w-auto object-contain"
             />
-         <span className="hidden sm:inline text-[#D4AF37] text-sm font-body">
-              | 1º Workshop formativo da CGEMP
-          </span>
+            <div className="hidden sm:flex flex-col border-l border-[#D4AF37]/40 pl-3">
+              <span className="text-[#D4AF37] text-xs md:text-sm font-heading font-semibold uppercase tracking-wider">
+                1º Workshop formativo
+              </span>
+              <span className="text-primary-foreground/70 text-[10px] md:text-xs font-body">
+                da CGEMP
+              </span>
+            </div>
           </Link>
 
           {/* Desktop nav */}
