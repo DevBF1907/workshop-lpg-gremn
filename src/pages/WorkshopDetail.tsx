@@ -33,6 +33,7 @@ const WorkshopDetail = () => {
 
   const sharedDetails = [
     { icon: Calendar, label: "Data", value: workshop.data },
+    { icon: MapPin, label: "Local", value: workshop.location },
     { icon: Award, label: "Carga Horária", value: workshop.cargaHoraria },
     { icon: Users, label: "Público-alvo", value: workshop.publicoAlvo },
   ];
@@ -105,6 +106,14 @@ const WorkshopDetail = () => {
                     <h3 className="font-heading font-bold text-lg mb-4 text-foreground">
                       {workshop.name} - {session.shift}
                     </h3>
+                    
+                    {session.title && (
+                      <div className="mb-4 p-3 bg-accent/5 rounded-lg border-l-4 border-accent">
+                        <p className="text-sm font-semibold text-foreground leading-tight">
+                          {session.title}
+                        </p>
+                      </div>
+                    )}
                     
                     <div className="space-y-3 mb-8 flex-grow">
                       <div className="flex items-center gap-3 text-sm">
