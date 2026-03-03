@@ -4,7 +4,7 @@ import type { LucideIcon } from "lucide-react";
 import {
   BookOpen, Leaf, Atom, FlaskConical, BrainCircuit, Calculator,
   Lightbulb, Globe, Landmark, Users, Languages, Dumbbell, Palette,
-  Library, Cpu,
+  Library, Cpu, Briefcase, Flag,
 } from "lucide-react";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
 import logosobre from "@/assets/fundoSobre.png";
@@ -13,7 +13,7 @@ import logosobre from "@/assets/fundoSobre.png";
 const iconMap: Record<string, LucideIcon> = {
   BookOpen, Leaf, Atom, FlaskConical, BrainCircuit, Calculator,
   Lightbulb, Globe, Landmark, Users, Languages, Dumbbell, Palette,
-  Library, Cpu,
+  Library, Cpu, Briefcase, Flag,
 };
 
 function AnimatedSection({ children, className = "" }: { children: React.ReactNode; className?: string }) {
