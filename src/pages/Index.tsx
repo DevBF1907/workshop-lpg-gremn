@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { BookOpen, Brain, GraduationCap, Lightbulb, Rocket, Target } from "lucide-react";
 import heroBg from "@/assets/fundoHero.png";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
-import logo from "@/assets/logo02.png";   
+import logo from "@/assets/branco.png";   
 
 const objectives = [
   { icon: BookOpen, text: "Promover formação interdisciplinar de qualidade" },
@@ -57,12 +57,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-primary-foreground/90">
               <div className="flex items-center gap-2">
                 <span className="text-accent">📅</span>
-                <span className="text-sm md:text-base font-body font-medium">15 a 20 de Março de 2026</span>
-              </div>
-              <span className="hidden sm:inline text-accent/50">•</span>
-              <div className="flex items-center gap-2">
-                <span className="text-accent">📍</span>
-                <span className="text-sm md:text-base font-body font-medium">Olinda, PE</span>
+                <span className="text-sm md:text-base font-body font-medium">15 a 25 de Março de 2026</span>
               </div>
             </div>
           </div>
