@@ -32,6 +32,8 @@ const locWorkshopBiblio = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1
 const locWorkshopIngles = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.2345!2d-34.8433954!3d-7.9134143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3e15838cf809%3A0x9a38a36c0c874dff!2sEREM%20Maestro%20Nelson%20Ferreira!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
 const locWorkshopCulturadgma = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1234!2d-34.873!3d-7.927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab15c9de6b488b%3A0xff763e04e7dc6e84!2sEREM%20Santa%20Ana!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
 const locWorkshopFisica = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.019!2d-34.895777!3d-7.951019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab165b326f8307%3A0x220521aed355e160!2sEREF%20Maria%20do%20Carmo%20Pinto%20Ribeiro!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
+const locWorkshopBio = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.019!2d-34.895777!3d-7.951019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab165b326f8307%3A0x220521aed355e160!2sEREF%20Maria%20do%20Carmo%20Pinto%20Ribeiro!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
+
 
 export const workshops: Workshop[] = [
   {
@@ -52,7 +54,7 @@ export const workshops: Workshop[] = [
         professor: "Profs.Diego Lins e Rogério Fonseca",
         horario: "08:00 - 12:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-lp-manha",
+        formLink: "https://forms.gle/qepZ28QGGQvAwnbj7",
       },
       {
         id: "lp-tarde",
@@ -61,7 +63,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Henrique Conceição",
         horario: "13:00 - 17:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-lp-tarde",
+        formLink: "https://forms.gle/qepZ28QGGQvAwnbj7",
 
       },
         {
@@ -71,7 +73,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Ivson Bruno",
         horario: "08:00 - 12:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-lp-manha",
+        formLink: "https://forms.gle/qepZ28QGGQvAwnbj7",
       },
        {
         id: "lp-tarde-2",
@@ -80,8 +82,7 @@ export const workshops: Workshop[] = [
         professor: "Tainá Meira das Chagas e Tayson Silva Cirqueira",
         horario: "13:00 - 17:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-lp-tarde",
-
+        formLink: "https://forms.gle/qepZ28QGGQvAwnbj7",
       },
     ],
   },
@@ -93,23 +94,41 @@ export const workshops: Workshop[] = [
     data: "16 de Março de 2026",
     publicoAlvo: "Professores de Biologia e Ciências Naturais",
     cargaHoraria: "4 horas",
-    location: "EREM Guedes Alcoforado, Olinda - PE",
-    mapUrl: locWorkshopQuimica,
+    location: "EREM DANTAS BARRETO",
+    mapUrl: locWorkshopBio,
     sessions: [
       {
         id: "bio-manha",
         shift: "Manhã",
-        title: "Biologia Celular e Molecular na Escola",
-        professor: "Prof. Luiz Alberto Barros",
+        title: "Pesquisa, Planejamento e Avaliação com Gemini e NotebookLM",
+        professor: "Prof.Vanessa Araújo",
         horario: "08:00 - 12:00",
         vagas: 25,
         formLink: "https://forms.gle/exemplo-bio-manha",
       },
-      {
+       {
         id: "bio-tarde",
         shift: "Tarde",
-        title: "Educação Ambiental e Sustentabilidade",
-        professor: "Prof.ª Dra. Helena Costa",
+        title: "Pesquisa, Planejamento e Avaliação com Gemini e NotebookLM",
+        professor: "Prof.Vanessa Araújo",
+        horario: "13:00 - 17:00",
+        vagas: 25,
+        formLink: "https://forms.gle/exemplo-bio-tarde",
+      },
+      {
+        id: "bio-manha-2",
+        shift: "Manhã",
+        title: "Biotecnologia e Cidadania Digital",
+        professor: "Prof.Eloyza Karoline",
+        horario: "13:00 - 17:00",
+        vagas: 25,
+        formLink: "https://forms.gle/exemplo-bio-tarde",
+      },
+      {
+        id: "bio-tarde-2",
+        shift: "Tarde",
+        title: "Biotecnologia e Cidadania Digital",
+        professor: "Prof.Eloyza Karoline",
         horario: "13:00 - 17:00",
         vagas: 25,
         formLink: "https://forms.gle/exemplo-bio-tarde",
@@ -185,15 +204,7 @@ export const workshops: Workshop[] = [
         vagas: 25,
         formLink: "https://forms.gle/exemplo-qui-tarde",
       },
-      {
-        id: "qui-tarde-2",
-        shift: "Tarde",
-        title: "A definir",
-        professor: "Prof.Leandro",
-        horario: "13:00 - 17:00",
-        vagas: 25,
-        formLink: "https://forms.gle/exemplo-qui-tarde",
-      },
+   
       {
         id: "qui-manha",
         shift: "Manhã",
@@ -530,6 +541,83 @@ export const workshops: Workshop[] = [
         horario: "13:00 - 17:00",
         vagas: 30,
         formLink: "https://forms.gle/exemplo-hist-pe-tarde",
+      },
+    ],
+  },
+  {
+    id: "corpo-arte-movimento",
+    name: "Corpo, Arte e Movimento",
+    icon: "Music",
+    description: "O objetivo da oficina sobre corpo, arte e movimento é promover o desenvolvimento integral dos participantes por meio da expressão corporal e artística. A proposta busca estimular a consciência do próprio corpo, a criatividade e a capacidade de comunicação através de gestos, ritmos e movimentos. Além disso, a oficina incentiva a socialização, o respeito às diferenças e o trabalho em equipe, fortalecendo valores como cooperação e empatia.",
+    data: "20 de Março de 2026",
+    publicoAlvo: "Professores de Educação Física, Arte e áreas afins",
+    cargaHoraria: "4 horas",
+    location: "ETE JOSÉ ALENCAR GOMES DA SILVA",
+    mapUrl: locWorkshopMat,
+    sessions: [
+      {
+        id: "cam-manha",
+        shift: "Manhã",
+        title: "MEU CORPO FALA?",
+        professor: "Prof.Josiane Oliveira",
+        horario: "08:00 - 12:00",
+        vagas: 25,
+        formLink: "https://forms.gle/fN9aAtkMiWiZFMTb6",
+      },
+    
+    ],
+  },
+  {
+    id: "filosofia-sociologia",
+    name: "Filosofia e Sociologia",
+    icon: "Brain",
+    description: "A oficina propõe uma reflexão sobre o papel da Filosofia e da Sociologia diante de uma sociedade marcada pelas relações digitais, onde os estudantes constroem identidades, valores e opiniões. Na perspectiva da Filosofia, serão discutidos temas como ética, liberdade e responsabilidade nas redes sociais, buscando estratégias para trabalhar esses conceitos de forma concreta em sala de aula. Já na Sociologia, o foco será compreender as juventudes como sujeitos diversos, influenciados pelas dinâmicas digitais na construção de pertencimentos e formas de participação social, estimulando o pensamento crítico. A formação prioriza o diálogo, a troca de experiências e a construção coletiva de práticas pedagógicas, fortalecendo o trabalho docente com rigor conceitual e conexão com a realidade dos estudantes.",
+    data: "18 de Março de 2026",
+    publicoAlvo: "Professores de Filosofia e Sociologia",
+    cargaHoraria: "4 horas",
+    location: "EREM SANTOS COSME E DAMIÃO",
+    mapUrl: "https://www.google.com/maps/place/ESCOLA+DE+REFERENCIA+EM+ENSINO+MEDIO+SANTOS+COSME+E+DAMIAO/@-7.8302682,-34.9087141,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab1434cae1d9bf:0x57a6ff7377333d00!8m2!3d-7.8302682!4d-34.9087141!16s%2Fg%2F1td25nj4?entry=ttu&g_ep=EgoyMDI2MDMwMS4xIKXMDSoASAFQAw%3D%3D",
+    sessions: [
+
+      {
+        id: "fs-tarde",
+        shift: "Tarde",
+        title: "EDUCAR NA ERA DIGITAL: ÉTICA, JUVENTUDES E IDENTIDADES EM REDE",
+        professor: "Prof.Rômulo Nascimento Filgueira",
+        horario: "13:00 - 17:00",
+        vagas: 30,
+        formLink: "https://forms.gle/zwnXFCnvXskb9Dpe7",
+      },
+    ],
+  },
+  {
+    id: "educador-apoio",
+    name: "Educador de Apoio",
+    icon: "HelpingHand",
+    description: "Formação voltada para a atuação do educador de apoio, estratégias de inclusão e suporte pedagógico aos estudantes.",
+    data: "20 de Março de 2026",
+    publicoAlvo: "Educadores de Apoio e Profissionais da Educação Especial",
+    cargaHoraria: "4 horas",
+    location: "A definir",
+    mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.01872123!2d-34.84!3d-7.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTQnMDAuMCJTIDM0wrA1MCcwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1",
+    sessions: [
+      {
+        id: "ea-manha",
+        shift: "Manhã",
+        title: "Mediação Pedagógica e Práticas Inclusivas",
+        professor: "A definir",
+        horario: "08:00 - 12:00",
+        vagas: 25,
+        formLink: "https://forms.gle/exemplo-ea-manha",
+      },
+      {
+        id: "ea-tarde",
+        shift: "Tarde",
+        title: "O Papel do Educador de Apoio no Cotidiano Escolar",
+        professor: "A definir",
+        horario: "13:00 - 17:00",
+        vagas: 25,
+        formLink: "https://forms.gle/exemplo-ea-tarde",
       },
     ],
   },

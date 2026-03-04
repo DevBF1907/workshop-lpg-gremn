@@ -5,14 +5,15 @@ import {
   BookOpen, Leaf, Atom, FlaskConical, BrainCircuit, Calculator,
   Lightbulb, Globe, Landmark, Users, Languages, Dumbbell, Palette,
   Library, Cpu, ArrowLeft, Clock, Calendar, UserCheck, Award, Hash,
-  ExternalLink, MapPin, Briefcase, Flag, Camera,
+  ExternalLink, MapPin, Briefcase, Flag, Accessibility, Brain, HelpingHand, Newspaper
 } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
   BookOpen, Leaf, Atom, FlaskConical, BrainCircuit, Calculator,
   Lightbulb, Globe, Landmark, Users, Languages, Dumbbell, Palette,
-  Library, Cpu, Briefcase, Flag,
+  Library, Cpu, Briefcase, Flag, Accessibility, Brain, HelpingHand, Newspaper
 };
+
 
 const WorkshopDetail = () => {
   const { id } = useParams();

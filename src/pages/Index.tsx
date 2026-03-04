@@ -30,12 +30,12 @@ const Index = () => {
   return (
     <div>
 
-      {/* Hero */}
+     
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <img
+      <img
           src={heroBg}
           alt="Workshop Formativo CGEMP"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover brightness-80 contrast-80"
         />
 
         <div className="hero-overlay absolute inset-0" />
@@ -73,7 +73,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Apresentação */}
+   
       <section className="section-padding bg-background">
         <div className="section-container">
           <AnimatedSection>
@@ -94,7 +94,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Objetivo Geral */}
+    
       <section className="section-padding bg-secondary">
         <div className="section-container">
           <AnimatedSection>
@@ -115,7 +115,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Objetivos Específicos */}
+      
       <section className="section-padding bg-background">
         <div className="section-container">
           <AnimatedSection>
@@ -141,7 +141,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA */}
+    
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div
           className="absolute inset-0"

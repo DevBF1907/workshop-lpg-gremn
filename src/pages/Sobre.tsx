@@ -66,60 +66,7 @@ const Sobre = () => {
           </AnimatedSection>
         </div>
       </section>
-
-      {/* Missão, Visão, Valores */}
-      <section className="section-padding bg-secondary">
-        <div className="section-container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <AnimatedSection>
-              <div className="bg-card rounded-lg border border-border p-8 text-center h-full">
-                <div className="w-14 h-14 rounded-full bg-accent/15 flex items-center justify-center mx-auto mb-4">
-                  <Target className="text-accent" size={28} />
-                </div>
-                <h3 className="font-heading font-bold text-xl text-foreground mb-3">Missão</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Promover a formação continuada de educadores, fomentando práticas pedagógicas
-                  inovadoras que garantam a qualidade do ensino e a aprendizagem significativa
-                  dos estudantes.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-card rounded-lg border border-border p-8 text-center h-full">
-                <div className="w-14 h-14 rounded-full bg-accent/15 flex items-center justify-center mx-auto mb-4">
-                  <Eye className="text-accent" size={28} />
-                </div>
-                <h3 className="font-heading font-bold text-xl text-foreground mb-3">Visão</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  Ser reconhecida como instituição de referência em formação docente,
-                  contribuindo para uma educação pública de excelência, inclusiva e
-                  transformadora.
-                </p>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection>
-              <div className="bg-card rounded-lg border border-border p-8 text-center h-full">
-                <div className="w-14 h-14 rounded-full bg-accent/15 flex items-center justify-center mx-auto mb-4">
-                  <Heart className="text-accent" size={28} />
-                </div>
-                <h3 className="font-heading font-bold text-xl text-foreground mb-3">Valores</h3>
-                <ul className="text-muted-foreground text-sm space-y-1.5 text-left">
-                  {values.map((v, i) => (
-                    <li key={i} className="flex items-center gap-2">
-                      <Star size={12} className="text-accent shrink-0" />
-                      {v}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-    </div>
+    </div>  
   );
 };
 
