@@ -1,6 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
-import logoSecretaria from "@/assets/logoSecretaria_GRE.png";
+import logoSecretaria from "@/assets/logos brancas.png";
 
 const Footer = () => {
   return (
@@ -71,7 +71,7 @@ const Footer = () => {
             <img
               src={logoSecretaria}
               alt="Secretaria de Educação e GRE Metropolitana Norte"
-              className="w-[150px] md:w-[200px] h-auto opacity-90 md:absolute md:right-0"
+              className="w-[200px] md:w-[300px] h-auto opacity-90 md:absolute md:right-0"
             />
 
           </div>
