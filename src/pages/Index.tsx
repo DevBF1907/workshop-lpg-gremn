@@ -48,13 +48,10 @@ const Index = () => {
               />
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12 animate-fade-in-up" style={{ animationDelay: "200ms" }}>
-              <div className="flex items-center gap-4">
-                <div className="h-px w-8 bg-accent/60 hidden sm:block"></div>
-                <p className="font-heading font-bold text-base md:text-xl uppercase tracking-[0.3em] text-primary-foreground">
-                  <span className="text-accent">16 a 31</span> de Março de 2026
-                </p>
-                <div className="h-px w-8 bg-accent/60 hidden sm:block"></div>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-primary-foreground/90 mb-12">
+              <div className="flex items-center gap-3 px-4 py-2 rounded-full bg-accent/20 border border-accent/30 ">
+                <span className="text-accent text-lg">📅</span>
+                <span className="text-sm md:text-base font-heading font-semibold uppercase tracking-wider">16 a 31 de Março de 2026</span>
               </div>
             </div>
 
@@ -75,10 +72,7 @@ const Index = () => {
         <div className="section-container">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto text-center space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-2">
-                <Sparkles size={14} />
-                <span>Sobre o Evento</span>
-              </div>
+              
               <h2 className="font-heading font-bold text-3xl md:text-5xl text-foreground">
                 O que é o Workshop?
               </h2>

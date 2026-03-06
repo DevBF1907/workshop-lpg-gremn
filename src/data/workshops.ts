@@ -21,18 +21,31 @@ export interface Workshop {
   sessions: Session[];
 }
 
-const locWorkshopPortugues1 = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.493922123!2d-34.9111831!3d-7.8525987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab14d50f29c135%3A0xb7c10c823a37123b!2sEscola%20T%C3%A9cnica%20Estadual%20Jurandir%20Bezerra%20Lins!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr";
-const locWorkshopQuimica = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.457813083!2d-34.8581581!3d-8.0132408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab22a5f6297a5f%3A0x780e7d9bc110b70!2sEscola%20Estadual%20Guedes%20Alcoforado!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr";
-const locWorkshopMat = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.9168!2d-34.8265!3d-7.9423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3dce2a35695d%3A0x97e7db499687a50d!2sETE%20Jos%C3%A9%20Alencar%20Gomes%20da%20Silva!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopHist = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1234!2d-34.8996!3d-7.9077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab15c9de6b488b%3A0xff763e04e7dc6e84!2sEscola%20Polivalente%20de%20Abreu%20e%20Lima!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopGeo = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1234!2d-34.873!3d-7.927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab15c9de6b488b%3A0xff763e04e7dc6e84!2sEREFEM%20Presidente%20Castelo%20Branco!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopArte = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1234!2d-34.873!3d-7.927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab15c9de6b488b%3A0xff763e04e7dc6e84!2sEREM%20Santos%20Cosme%20e%20Dami%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopEduFisica = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1234!2d-34.873!3d-7.927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab15c9de6b488b%3A0xff763e04e7dc6e84!2sEREM%20%C3%81urea%20de%20Moura%20Cavalcanti!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopBiblio = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1234!2d-34.873!3d-7.927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab15c9de6b488b%3A0xff763e04e7dc6e84!2sEREF%20Jer%C3%B4nimo%20de%20Albuquerque!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopIngles = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.2345!2d-34.8433954!3d-7.9134143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3e15838cf809%3A0x9a38a36c0c874dff!2sEREM%20Maestro%20Nelson%20Ferreira!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopCulturadgma = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1234!2d-34.873!3d-7.927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab15c9de6b488b%3A0xff763e04e7dc6e84!2sEREM%20Santa%20Ana!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopFisica = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.019!2d-34.895777!3d-7.951019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab165b326f8307%3A0x220521aed355e160!2sEREF%20Maria%20do%20Carmo%20Pinto%20Ribeiro!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
-const locWorkshopBio = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.019!2d-34.895777!3d-7.951019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab165b326f8307%3A0x220521aed355e160!2sEREF%20Maria%20do%20Carmo%20Pinto%20Ribeiro!5e0!3m2!1spt-BR!2sbr!4v1710000000000";
+const locWorkshopPortugues1 = "https://www.google.com/maps?q=Escola%20T%C3%A9cnica%20Estadual%20Jurandir%20Bezerra%20Lins&output=embed";
+
+const locWorkshopQuimica = "https://www.google.com/maps?q=Escola%20Estadual%20Guedes%20Alcoforado&output=embed";
+
+const locWorkshopMat = "https://www.google.com/maps?q=ETE%20Jos%C3%A9%20Alencar%20Gomes%20da%20Silva&output=embed";
+
+const locWorkshopHist = "https://www.google.com/maps?q=Escola%20Polivalente%20de%20Abreu%20e%20Lima&output=embed";
+
+const locWorkshopGeo = "https://www.google.com/maps?q=EREFEM%20Presidente%20Castelo%20Branco&output=embed";
+
+const locWorkshopArte = "https://www.google.com/maps?q=EREM%20Santos%20Cosme%20e%20Dami%C3%A3o&output=embed";
+
+const locWorkshopEduFisica = "https://www.google.com/maps?q=EREM%20%C3%81urea%20de%20Moura%20Cavalcanti&output=embed";
+
+const locWorkshopBiblio = "https://www.google.com/maps?q=EREF%20Jer%C3%B4nimo%20de%20Albuquerque&output=embed";
+
+const locWorkshopIngles = "https://www.google.com/maps?q=EREM%20Maestro%20Nelson%20Ferreira&output=embed";
+
+const locWorkshopCulturadgma = "https://www.google.com/maps?q=EREM%20Santa%20Ana&output=embed";
+
+const locWorkshopFisica = "https://www.google.com/maps?q=EREF%20Maria%20do%20Carmo%20Pinto%20Ribeiro&output=embed";
+
+const locWorkshopBio = "https://www.google.com/maps?q=EREM+Dantas+Barreto+Pernambuco&output=embed";
+  
+const locWorkshopFiloSociologia = "https://www.google.com/maps?q=EREM%20Santos%20Cosme%20e%20Dami%C3%A3o&output=embed";
 
 
 export const workshops: Workshop[] = [
@@ -94,8 +107,8 @@ export const workshops: Workshop[] = [
     data: "26 de Março de 2026",
     publicoAlvo: "Professores de Língua Portuguesa do Ensino Fundamental e Médio",
     cargaHoraria: "4 horas",
-    location: "EREM Santa Ana ",
-    mapUrl: locWorkshopPortugues1,
+    location: "EREM Santa Ana",
+    mapUrl: locWorkshopCulturadgma,
     sessions: [
       {
         id: "lp-manha",
@@ -121,16 +134,16 @@ export const workshops: Workshop[] = [
         shift: "Tarde",
         title: "Discurso e Persuasão: um olhar crítico sobre os conteúdos informativos compartilhados na internet",
         professor: "Prof.Henrique Conceição",
-        horario: "08:00 - 12:00",
+        horario: "13:00 - 17:00",
         vagas: 30,
         formLink: "https://forms.gle/qepZ28QGGQvAwnbj7",
       },
        {
-        id: "lp-tarde-3",
-        shift: "Tarde",
+        id: "lp-manha-3",
+        shift: "Manhã",
         title: "Vozes críticas: a produção de conteúdos digitais (gêneros dialogais) como ferramentas para formation cidadã",
         professor: "Tainá Meira das Chagas e Tayson Silva Cirqueira",
-        horario: "13:00 - 17:00",
+        horario: "08:00 - 12:00",
         vagas: 30,
         formLink: "https://forms.gle/qepZ28QGGQvAwnbj7",
       },
@@ -255,7 +268,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Luiz Alberto Barros",
         horario: "13:00 - 17:00",
         vagas: 25,
-        formLink: "https://forms.gle/exemplo-qui-tarde",
+        formLink: "https://forms.gle/6ChhHEZqdhBmzMPt8",
       },
    
       {
@@ -265,7 +278,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Luiz Paulo",
         horario: "08:00 - 12:00",
         vagas: 25,
-        formLink: "https://forms.gle/exemplo-qui-manha",
+        formLink: "https://forms.gle/6ChhHEZqdhBmzMPt8",
       },
        {
         id: "qui-manha-2",
@@ -274,7 +287,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Wagner Silva",
         horario: "08:00 - 12:00",
         vagas: 25,
-        formLink: "https://forms.gle/exemplo-qui-manha",
+        formLink: "https://forms.gle/6ChhHEZqdhBmzMPt8",
       },
     ],
   },
@@ -296,7 +309,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Wilka Karla",
         horario: "08:00 - 12:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-mat-manha",
+        formLink: "https://forms.gle/EzRJkeVhzNhXbH8z7",
       },
          {
         id: "mat-manha-2",
@@ -305,7 +318,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Diogo Sant’Ana de Vasconcelos",
         horario: "08:00 - 12:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-mat-manha",
+        formLink: "https://forms.gle/EzRJkeVhzNhXbH8z7",
       },
       {
         id: "mat-tarde",
@@ -314,7 +327,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Huanê Patricia",
         horario: "13:00 - 17:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-mat-tarde",
+        formLink: "https://forms.gle/EzRJkeVhzNhXbH8z7",
       },
     ],
   },
@@ -336,16 +349,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Aroma",
         horario: "08:00 - 12:00",
         vagas: 25,
-        formLink: "https://forms.gle/exemplo-filo-manha",
-      },
-      {
-        id: "filo-tarde",
-        shift: "Tarde",
-        title: "Filosofia Contemporânea e Novas Linguagens",
-        professor: "Prof. Dr. Pedro Mendes",
-        horario: "13:00 - 17:00",
-        vagas: 25,
-        formLink: "https://forms.gle/exemplo-filo-tarde",
+        formLink: "https://forms.gle/hMQV7SLrQzYBhuax9",
       },
     ],
   },
@@ -367,7 +371,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Ivison Marques ",
         horario: "08:00 - 12:00",
         vagas: 25,
-        formLink: "https://forms.gle/exemplo-geo-manha",
+        formLink: "https://forms.gle/wcSbhjo2ANBghUsEA",
       },
       {
         id: "geo-tarde",
@@ -376,7 +380,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Ivison Marques",
         horario: "13:00 - 17:00",
         vagas: 25,
-        formLink: "https://forms.gle/exemplo-geo-tarde",
+        formLink: "https://forms.gle/wcSbhjo2ANBghUsEA",
       },
     ],
   },
@@ -398,7 +402,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.João Neves",
         horario: "08:00 - 12:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-his-manha",
+        formLink: "https://forms.gle/m16RdGCvuHnLuCJF9",
       },
       {
         id: "his-tarde",
@@ -407,7 +411,25 @@ export const workshops: Workshop[] = [
         professor: "Prof.João Neves",
         horario: "13:00 - 17:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-his-tarde",
+        formLink: "https://forms.gle/m16RdGCvuHnLuCJF9",
+      },
+       {     
+        id: "his-manha-2",
+        shift: "Manhã",
+        title: "Memórias, narrativas e disputas de sentido na internet",
+        professor: "Prof.RAFAELA FRANKLIN",
+        horario: "08:00 - 12:00",
+        vagas: 30,
+        formLink: "https://forms.gle/m16RdGCvuHnLuCJF9",
+      },
+      {
+        id: "his-tarde-2",
+        shift: "Tarde",
+        title: "Memórias, narrativas e disputas de sentido na internet",
+        professor: "Prof.RAFAELA FRANKLIN",
+        horario: "13:00 - 17:00",
+        vagas: 30,
+        formLink: "https://forms.gle/m16RdGCvuHnLuCJF9",
       },
     ],
   },
@@ -466,7 +488,7 @@ export const workshops: Workshop[] = [
     name: "Educação Física",
     icon: "Dumbbell",
     description: "Práticas inovadoras em Educação Física escolar, incluindo esportes adaptados, jogos cooperativos e saúde integral.",
-    data: "19 de Março de 2026",
+    data: "26 de Março de 2026",
     publicoAlvo: "Professores de Educação Física",
     cargaHoraria: "4 horas",
     location: "EREM ÁUREA DE MOURA CAVALCANTI",
@@ -510,7 +532,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Ayla",
         horario: "08:00 - 12:00",
         vagas: 25,
-        formLink: "https://forms.gle/exemplo-arte-manha",
+        formLink: "https://forms.gle/9KgK49d1u7Ym3HCCA",
       },
       {
         id: "arte-tarde",
@@ -519,7 +541,7 @@ export const workshops: Workshop[] = [
         professor: "Prof.Ayla",
         horario: "13:00 - 17:00",
         vagas: 25,
-        formLink: "https://forms.gle/exemplo-arte-tarde",
+        formLink: "https://forms.gle/9KgK49d1u7Ym3HCCA",
       },
     ],
   },
@@ -534,15 +556,6 @@ export const workshops: Workshop[] = [
     location: "EREF JERÔNIMO DE ALBUQUERQUE",
     mapUrl: locWorkshopBiblio,
     sessions: [
-      {
-        id: "bib-manha",
-        shift: "Manhã",
-        title: "haverá outra formação ou apenas pela tarde ?",
-        professor: "Prof.ª Dra. Renata Nunes",
-        horario: "08:00 - 12:00",
-        vagas: 20,
-        formLink: "https://forms.gle/su6CTxfQF9Sp876Q7",
-      },
       {
         id: "bib-tarde",
         shift: "Tarde",
@@ -572,7 +585,7 @@ export const workshops: Workshop[] = [
         professor: "Profs.Monica e ADILSON",
         horario: "08:00 - 12:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-pts-manha",
+        formLink: "https://forms.gle/fF9kfZ1JmvALLPvm9",
       },
       {
         id: "pts-tarde",
@@ -581,7 +594,7 @@ export const workshops: Workshop[] = [
         professor: "Profs.Monica e Adilson",
         horario: "13:00 - 17:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-pts-tarde",
+        formLink: "https://forms.gle/fF9kfZ1JmvALLPvm9",
       },
     ],
   },
@@ -589,8 +602,8 @@ export const workshops: Workshop[] = [
     id: "historia-pe",
     name: "História de Pernambuco",
     icon: "Flag",
-    description: "Aprofundamento em temas da história regional de Pernambuco, explorando novas abordagens historiográficas, movimentos sociais e identidade cultural.",
-    data: "18 de Março de 2026",
+    description: "Esta formação visa apresentar o novo itinerário formativo de aprofundamento: História de Pernambuco, bem como suas orientações, objetivos e princípios, a fim de garantir a aplicabilidade na rede estadual de ensino. Além disso, buscamos ampliar os debates sobre a participação histórica de sujeitos e sujeitas silenciadas na historiografia. Inicialmente nosso enfoque será direcionado às mulheres envolvidas em eventos históricos, estabelecendo uma conexão com a comemoração do Dia internacional das Mulheres e os estudos de gênero. Nosso intuito é tornar as professoras e os professores mediadores das pesquisas desenvolvidas pelos alunos e alunas, a partir de novas abordagens e  trajetórias",
+    data: "25 de Março de 2026",
     publicoAlvo: "Professores de História e áreas de Ciências Humanas",
     cargaHoraria: "4 horas",
     location: "EREFEM Polivalente de Abreu e Lima",
@@ -599,20 +612,20 @@ export const workshops: Workshop[] = [
       {
         id: "hist-pe-manha",
         shift: "Manhã",
-        title: "Revoluções e Movimentos Sociais em Pernambuco: Da Colônia à República",
+        title: "História de Pernambuco: novo itinerário e perspectivas de ensino",
         professor: "Profs.Rafaela Franklin e Andreia Bandeira",
         horario: "08:00 - 12:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-hist-pe-manha",
+        formLink: "https://forms.gle/xmv1UX7mNcRBfcGG6",
       },
       {
         id: "hist-pe-tarde",
         shift: "Tarde",
-        title: "Patrimônio, Memória e Identidade Pernambucana na Sala de Aula",
+        title: "História de Pernambuco: novo itinerário e perspectivas de ensino",
         professor: "Profs.Rafaela Franklin e Andreia Bandeira",
         horario: "13:00 - 17:00",
         vagas: 30,
-        formLink: "https://forms.gle/exemplo-hist-pe-tarde",
+        formLink: "https://forms.gle/xmv1UX7mNcRBfcGG6",
       },
     ],
   },
@@ -648,7 +661,7 @@ export const workshops: Workshop[] = [
     publicoAlvo: "Professores de Filosofia e Sociologia",
     cargaHoraria: "4 horas",
     location: "EREM SANTOS COSME E DAMIÃO",
-    mapUrl: "https://www.google.com/maps/place/ESCOLA+DE+REFERENCIA+EM+ENSINO+MEDIO+SANTOS+COSME+E+DAMIAO/@-7.8302682,-34.9087141,17z/data=!3m1!4b1!4m6!3m5!1s0x7ab1434cae1d9bf:0x57a6ff7377333d00!8m2!3d-7.8302682!4d-34.9087141!16s%2Fg%2F1td25nj4?entry=ttu&g_ep=EgoyMDI2MDMwMS4xIKXMDSoASAFQAw%3D%3D",
+    mapUrl: locWorkshopFiloSociologia,
     sessions: [
 
       {
