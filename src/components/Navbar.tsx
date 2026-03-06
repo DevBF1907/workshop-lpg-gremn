@@ -28,7 +28,7 @@ const Navbar = () => {
                 1º Workshop formativo
               </span>
               <span className="text-primary-foreground/70 text-[10px] md:text-xs font-body">
-                da CGEMP
+                CGEMP 2026
               </span>
             </div>
           </Link>

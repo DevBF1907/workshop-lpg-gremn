@@ -1,6 +1,6 @@
 import { GraduationCap, Network, BarChart3, LifeBuoy, Users, BookOpen, Sparkles } from "lucide-react";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
-import logosobre from "@/assets/fundoSobre.png";
+import heroBg from "@/assets/fundoHero.png";
 
 function AnimatedSection({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   const ref = useScrollAnimation();
@@ -31,25 +31,25 @@ const attributions = [
   {
     icon: Users,
     title: "Fortalecimento da Rede",
-    description: "Promoção da equidade, diversidade e protagonismo juvenil nas escolas de Ensino Médio."
+    description: "Promoção da equidade, diversity e protagonismo juvenil nas escolas de Ensino Médio."
   }
 ];
 
 const Sobre = () => {
   return (
     <div className="pt-20">
-      {/* Header / Apresentação */}
+      {/* Header / Apresentação - Agora com fundoHero.png */}
       <section className="relative min-h-[500px] flex items-center justify-center overflow-hidden">
         <img
-          src={logosobre}
+          src={heroBg}
           alt="Workshop Formativo CGEMP"
-          className="absolute inset-0 w-full h-full object-cover brightness-75 contrast-90"
+          className="absolute inset-0 w-full h-full object-cover brightness-[0.6] contrast-[0.9]"
         />
         <div className="hero-overlay absolute inset-0" />
         
         <div className="relative z-10 section-container text-center px-6 max-w-5xl mx-auto py-16">
           <AnimatedSection>
-            
+      
             <h1 className="font-heading font-bold text-4xl md:text-6xl text-primary-foreground mb-8 drop-shadow-lg">
               I Workshop Formativo – CGEMP 2026
             </h1>
@@ -97,10 +97,10 @@ const Sobre = () => {
             </p>
           </AnimatedSection>
 
-          {/* GRID DE CARDS ALINHADOS COM O RESTO DO SITE */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {/* CARDS ALINHADOS E CENTRALIZADOS */}
+          <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
             {attributions.map((attr, index) => (
-              <AnimatedSection key={index}>
+              <AnimatedSection key={index} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
                 <div className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border hover:border-accent transition-all duration-300 h-full group">
                   <div className="shrink-0 w-12 h-12 rounded-lg bg-accent/15 flex items-center justify-center group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300">
                     <attr.icon className="text-accent group-hover:text-inherit" size={24} />

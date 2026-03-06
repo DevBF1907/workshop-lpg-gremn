@@ -4,10 +4,10 @@ import type { LucideIcon } from "lucide-react";
 import {
   BookOpen, Leaf, Atom, FlaskConical, BrainCircuit, Calculator,
   Lightbulb, Globe, Landmark, Users, Languages, Dumbbell, Palette,
-  Library, Cpu, Briefcase, Flag, Accessibility, Brain, HelpingHand, Newspaper,
-  Sparkles
+  Library, Cpu, Briefcase, Flag, Accessibility, Brain, HelpingHand, Newspaper
 } from "lucide-react";
 import { useScrollAnimation } from "@/components/useScrollAnimation";
+import heroBg from "@/assets/fundoHero.png";
 
 
 const iconMap: Record<string, LucideIcon> = {
@@ -24,12 +24,14 @@ function AnimatedSection({ children, className = "" }: { children: React.ReactNo
 const Inscricao = () => {
   return (
     <div className="pt-20">
-      {/* Header / Hero - Sem Imagem de Fundo */}
-      <section className="relative min-h-[350px] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0" 
-          style={{ background: "var(--hero-gradient)" }} 
+      {/* Header / Hero - Agora com fundoHero.png */}
+      <section className="relative min-h-[400px] flex items-center justify-center overflow-hidden">
+        <img
+          src={heroBg}
+          alt="Workshops CGEMP"
+          className="absolute inset-0 w-full h-full object-cover brightness-[0.6] contrast-[0.9]"
         />
+        <div className="hero-overlay absolute inset-0" />
         
         <div className="relative z-10 section-container text-center px-6 max-w-5xl mx-auto py-16">
           <AnimatedSection>
