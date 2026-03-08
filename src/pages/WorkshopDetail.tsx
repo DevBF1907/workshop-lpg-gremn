@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { workshops } from "@/data/workshops";
 import type { LucideIcon } from "lucide-react";
@@ -5,7 +6,8 @@ import {
   BookOpen, Leaf, Atom, FlaskConical, BrainCircuit, Calculator,
   Lightbulb, Globe, Landmark, Users, Languages, Dumbbell, Palette,
   Library, Cpu, ArrowLeft, Clock, Calendar, UserCheck, Award, Hash,
-  ExternalLink, MapPin, Briefcase, Flag, Accessibility, Brain, HelpingHand, Newspaper
+  ExternalLink, MapPin, Briefcase, Flag, Accessibility, Brain, HelpingHand, Newspaper,
+  ChevronDown, ChevronUp
 } from "lucide-react";
 import heroBg from "@/assets/fundoHero.png";
 
@@ -15,6 +17,32 @@ const iconMap: Record<string, LucideIcon> = {
   Library, Cpu, Briefcase, Flag, Accessibility, Brain, HelpingHand, Newspaper
 };
 
+const ExpandableText = ({ text, maxLength = 250 }: { text: string; maxLength?: number }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const shouldTruncate = text.length > maxLength;
+
+  const displayText = isExpanded ? text : text.slice(0, maxLength) + (shouldTruncate ? "..." : "");
+
+  return (
+    <div className="mb-8">
+      <p className="text-muted-foreground leading-relaxed text-lg transition-all duration-300">
+        {displayText}
+      </p>
+      {shouldTruncate && (
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="text-accent font-bold mt-3 hover:text-accent/80 flex items-center gap-1 transition-colors bg-accent/10 px-4 py-1.5 rounded-full text-sm"
+        >
+          {isExpanded ? (
+            <>Ver menos <ChevronUp size={16} /></>
+          ) : (
+            <>Ver mais <ChevronDown size={16} /></>
+          )}
+        </button>
+      )}
+    </div>
+  );
+};
 
 const WorkshopDetail = () => {
   const { id } = useParams();
@@ -83,7 +111,7 @@ const WorkshopDetail = () => {
                   <div className="w-1.5 h-8 bg-accent rounded-full"></div>
                   Sobre o Workshop
                 </h2>
-                <p className="text-muted-foreground leading-relaxed mb-8 text-lg">{workshop.description}</p>
+                <ExpandableText text={workshop.description} />
                 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-card p-8 rounded-2xl border border-border shadow-sm">
                   {sharedDetails.map((d, i) => (
@@ -124,10 +152,16 @@ const WorkshopDetail = () => {
                     </h3>
                     
                     {session.title && (
-                      <div className="mb-6 p-4 bg-accent/5 rounded-xl border-l-4 border-accent">
+                      <div className="mb-4 p-4 bg-accent/5 rounded-xl border-l-4 border-accent">
                         <p className="text-sm font-bold text-foreground leading-snug italic">
                           "{session.title}"
                         </p>
+                      </div>
+                    )}
+
+                    {session.description && (
+                      <div className="mb-6">
+                        <ExpandableText text={session.description} maxLength={150} />
                       </div>
                     )}
                     
