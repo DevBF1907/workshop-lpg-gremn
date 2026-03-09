@@ -82,8 +82,9 @@ const Index = () => {
               <div className="w-20 h-1.5 bg-accent mx-auto rounded-full"></div>
               <div className="space-y-4 text-muted-foreground text-lg md:text-xl leading-relaxed">
                 <p>
-                  O Workshop Formativo CGEMP é um evento de formação continuada de excelência, voltado para
-                  educadores, gestores e profissionais da educação jurisdicionados à GRE Metropolitana Norte.
+                 O Workshop Formativo CGEMP é uma iniciativa da Coordenação Geral de Ensino Médio e Profissional da Gerência Regional de Educação Metropolitana Norte (SEE/PE), que promove formações continuadas para os(as) docentes do Ensino Médio da respectiva Gerência.
+                São ofertadas oficinas práticas para todos os componentes do Ensino Médio, focadas na inovação e na qualidade do ensino.
+
                 </p>
                 <p className="font-medium text-foreground">
                   Oferecemos oficinas práticas em diversas áreas do conhecimento, focadas na inovação e na qualidade do ensino.
@@ -162,7 +163,7 @@ const Index = () => {
             </h2>
 
             <p className="text-primary-foreground/80 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
-              Inscreva-se agora e faça parte desta transformação histórica na educação da nossa regional.
+          Contamos com sua participação, para juntos trilharmos caminhos que tornem a aprendizagem mais significativa, emancipadora e alinhada aos desafios do nosso tempo. Inscreva-se agora! 
             </p>
 
             <Link to="/inscricao" className="btn-gold text-xl px-12 py-5 shadow-2xl">
