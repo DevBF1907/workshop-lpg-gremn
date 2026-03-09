@@ -234,7 +234,7 @@ const WorkshopDetail = () => {
                    Resumo do Evento
                 </h3>
                 <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
-                  Este workshop oferece duas opções de horários. Você pode se inscrever em um ou em ambos, conforme sua disponibilidade.
+                  Este workshop oferece duas opções de horários. Você pode se inscrever de acordo com sua disponibilidade de aula-atividade.
                 </p>
                 <div className="space-y-6">
                   <div className="p-4 bg-accent/5 rounded-xl border border-accent/10">

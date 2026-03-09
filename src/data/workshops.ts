@@ -56,7 +56,7 @@ export const workshops: Workshop[] = [
   icon: "BookOpen",
   description: "Workshop focado em metodologias inovadoras para o ensino da Língua Portuguesa, explorando novas abordagens para leitura, escrita e interpretação de textos no contexto contemporâneo.",
   data: "19 de Março de 2026",
-  publicoAlvo: "Professores de Língua Portuguesa do Ensino Fundamental e Médio",
+  publicoAlvo: "Professores de Língua Portuguesa do Ensino Médio",
   cargaHoraria: "4 horas",
   location: "ETE JURANDIR BEZERRA LINS",
   mapUrl: locWorkshopPortugues1,
@@ -109,7 +109,7 @@ export const workshops: Workshop[] = [
   icon: "BookOpen",
   description: "Workshop focado em metodologias inovadoras para o ensino da Língua Portuguesa, explorando novas abordagens para leitura, escrita e interpretação de textos no contexto contemporâneo.",
   data: "26 de Março de 2026",
-  publicoAlvo: "Professores de Língua Portuguesa do Ensino Fundamental e Médio",
+  publicoAlvo: "Professores de Língua Portuguesa do Ensino Médio",
   cargaHoraria: "4 horas",
   location: "EREM Santa Ana",
   mapUrl: locWorkshopCulturadgma,
@@ -690,5 +690,5 @@ export const workshops: Workshop[] = [
       formLink: "https://forms.gle/M74A4LKZHGzKD1DJ8",
     },
   ],
-},
+}
 ];

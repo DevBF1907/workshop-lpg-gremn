@@ -92,8 +92,7 @@ const Sobre = () => {
               Sobre a CGEMP
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-3xl mx-auto text-lg">
-              A Coordenação Geral de Ensino Médio e Profissional da Gerência Regional Metropolitana Norte
-              corresponde à equipe responsável pelo acompanhamento pedagógico de 57 escolas jurisdicionadas.
+             A Coordenação Geral de Ensino Médio e Profissional da Gerência Regional Metropolitana Norte corresponde à equipe responsável pelo acompanhamento pedagógico de 57 escolas jurisdicionadas à GRE Metropolitana Norte, incluindo escolas regulares, integrais e de ensino Técnico. 
             </p>
           </AnimatedSection>
 
