@@ -234,7 +234,9 @@ const WorkshopDetail = () => {
                    Resumo do Evento
                 </h3>
                 <p className="text-sm text-muted-foreground mb-8 leading-relaxed">
-                  Este workshop oferece duas opções de horários. Você pode se inscrever de acordo com sua disponibilidade de aula-atividade.
+                  {workshop.sessions.length > 1 
+                    ? "Este workshop oferece duas opções de horários. Você pode se inscrever de acordo com sua disponibilidade de aula-atividade."
+                    : "Este workshop oferece apenas uma opção de horário. Você pode se inscrever de acordo com sua disponibilidade de aula-atividade."}
                 </p>
                 <div className="space-y-6">
                   <div className="p-4 bg-accent/5 rounded-xl border border-accent/10">
