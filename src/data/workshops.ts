@@ -369,6 +369,16 @@ export const workshops: Workshop[] = [
         vagas: 40,
         formLink: "https://forms.gle/hMQV7SLrQzYBhuax9",
       },
+      {
+        id: "filo-tarde",
+        shift: "Tarde",
+        title: "Reprogramando o Curriculo PE: Inserção do componente Cultura Digital e Midiática",
+        description: "Formação estratégica sobre como integrar as novas diretrizes de Cultura Digital e Midiática no currículo escolar de Pernambuco de forma prática e eficaz.",
+        professor: "Prof.Aroma Bandeira",
+        horario: "13:00 - 17:00",
+        vagas: 40,
+        formLink: "https://forms.gle/hMQV7SLrQzYBhuax9",
+      },
     ],
   },
 {
