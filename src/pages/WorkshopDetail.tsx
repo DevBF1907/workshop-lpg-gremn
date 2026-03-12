@@ -166,20 +166,23 @@ const WorkshopDetail = () => {
                     )}
                     
                     <div className="space-y-4 mb-8 flex-grow">
-                      <div className="flex items-center gap-3 text-sm font-medium">
-                        <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center">
+                      <div className="flex items-start gap-3 text-sm font-medium">
+                        <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center shrink-0">
                           <UserCheck size={18} className="text-accent" />
                         </div>
-                        <span className="text-muted-foreground">Professor: <strong className="text-foreground">{session.professor}</strong></span>
+                        <div className="text-muted-foreground pt-1">
+                          <span className="block mb-1">{session.professores.includes("\n") || session.professores.includes(" e ") ? "Professores:" : "Professor:"}</span>
+                          <strong className="text-foreground whitespace-pre-wrap block">{session.professores}</strong>
+                        </div>
                       </div>
                       <div className="flex items-center gap-3 text-sm font-medium">
-                        <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center shrink-0">
                           <Clock size={18} className="text-accent" />
                         </div>
                         <span className="text-muted-foreground">Horário: <strong className="text-foreground">{session.horario}</strong></span>
                       </div>
                       <div className="flex items-center gap-3 text-sm font-medium">
-                        <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center">
+                        <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center shrink-0">
                           <MapPin size={18} className="text-accent" />
                         </div>
                         <span className="text-muted-foreground">Local: <strong className="text-foreground">{workshop.location}</strong></span>
