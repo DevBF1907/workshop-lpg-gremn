@@ -389,7 +389,7 @@ export const workshops: Workshop[] = [
   data: "18 de Março de 2026",
   publicoAlvo: "Professores de Geografia do Ensino Médio",
   cargaHoraria: "4 horas",
-  location: "EREFEM Presitente Castelo Branco",
+  location: "EREFEM Presidente Castelo Branco",
   mapUrl: locWorkshopGeo,
   sessions: [
     {
@@ -558,7 +558,7 @@ export const workshops: Workshop[] = [
   icon: "Palette",
   description: "O ensino de Arte como ferramenta de transformação social, explorando linguagens artísticas contemporâneas e expressão criativa.",
   data: "19 de Março de 2026",
-  publicoAlvo: "Professores de Arte e Educação Artística",
+  publicoAlvo: "Professores de Arte",
   cargaHoraria: "4 horas",
   location: "EREM SANTOS COSME E DAMIÃO",
   mapUrl: locWorkshopArte,
