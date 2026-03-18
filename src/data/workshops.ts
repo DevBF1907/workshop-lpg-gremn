@@ -356,8 +356,8 @@ export const workshops: Workshop[] = [
     data: "20 de Março de 2026",
     publicoAlvo: "Professores do componente Cultura Digital e Midiática",
     cargaHoraria: "4 horas",
-    location: "EREM DANTAS BARRETO",
-    mapUrl: locWorkshopBio,
+    location: "EREM SANTA ANA",
+    mapUrl: locWorkshopCulturadgma,
     sessions: [
       {
         id: "filo-manha",
@@ -692,8 +692,8 @@ export const workshops: Workshop[] = [
   data: "20 de Março de 2026",
   publicoAlvo: "Professores de Educação Física, Arte e áreas afins",
   cargaHoraria: "4 horas",
-  location: "ETE JOSÉ ALENCAR GOMES DA SILVA",
-  mapUrl: locWorkshopMat,
+  location: "EREM DANTAS BARRETO",
+  mapUrl: locWorkshopBio,
   sessions: [
     {
       id: "cam-manha",
