@@ -39,9 +39,7 @@ const Inscricao = () => {
               Workshops Disponíveis
             </h1>
             <p className="text-primary-foreground/90 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Escolha a oficina do seu componente curricular e garanta sua participação neste encontro de inovação
-pedagógica.
-
+             Escolha a oficina do seu componente curricular e garanta sua participação neste encontro de inovação pedagógica.
             </p>
           </AnimatedSection>
         </div>
