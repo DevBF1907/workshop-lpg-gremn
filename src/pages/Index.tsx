@@ -52,7 +52,7 @@ const Index = () => {
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-accent/60 hidden sm:block"></div>
                 <p className="font-heading font-bold text-base md:text-xl uppercase tracking-[0.3em] text-primary-foreground">
-                  <span className="text-accent">16 a 31</span> de Março de 2026
+                  <span className="text-accent">16 de Março a 8</span> de Abril de 2026
                 </p>
                 <div className="h-px w-8 bg-accent/60 hidden sm:block"></div>
               </div>
